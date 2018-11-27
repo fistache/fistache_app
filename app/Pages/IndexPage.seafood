@@ -1,0 +1,13 @@
+<script>
+    import {Page} from "@seafood/framework";
+
+    export class IndexPage extends Page {
+        //
+    }
+</script>
+
+<template>
+    <div class="page page--index">
+        <!-- // -->
+    </div>
+</template>

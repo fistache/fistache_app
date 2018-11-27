@@ -1,1 +1,2 @@
-# seafood_app
+# Seafood project
+

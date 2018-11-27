@@ -1,0 +1,17 @@
+<script>
+    import {Component} from "@seafood/framework";
+
+    /**
+     * Viewport must contain <content> tag to show currently
+     * viewed by user page.
+     */
+    export class App extends Component {
+        //
+    }
+</script>
+
+<template>
+    <div class="app">
+        <content/>
+    </div>
+</template>

@@ -1,0 +1,5 @@
+{
+  "presets": [
+    "@seafood/app"
+  ]
+}
