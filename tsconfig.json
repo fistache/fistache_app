@@ -1,3 +1,6 @@
 {
-  "extends": "@seafood/typescript-config-recommended"
+  "extends": "./node_modules/seafood-typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "moduleResolution": "node"
+  }
 }
