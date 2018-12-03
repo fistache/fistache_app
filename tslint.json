@@ -1,3 +1,3 @@
 {
-  "extends": "seafood-tslint-config"
+  "extends": "./node_modules/seafood-tslint-config/tslint.json"
 }

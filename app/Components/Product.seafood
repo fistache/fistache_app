@@ -1,17 +1,17 @@
 <script>
     import {Component, use, attribute} from "@seafood/component";
-    // import {Product} from "../Entities/Product";
-    // import ProductPrice from "./ProductPrice.seafood";
+    import {Product} from "../Entities/Product";
+    import ProductPrice from "./ProductPrice.seafood";
 
     // @use(ProductPrice)
-    export default class ProductComponent extends Component {
+    export default class ProductComponent { // extends Component {
         // @attribute({
         //     required: true
         // })
-        // protected product: Product;
+        protected product: Product;
 
         protected f() {
-            console.log('123')
+            return 'f'
         }
     }
 </script>
