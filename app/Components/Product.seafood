@@ -3,11 +3,11 @@
     import {Product} from "../Entities/Product";
     import ProductPrice from "./ProductPrice.seafood";
 
-    // @use(ProductPrice)
-    export default class ProductComponent { // extends Component {
-        // @attribute({
-        //     required: true
-        // })
+    @use(ProductPrice)
+    export default class ProductComponent extends Component {
+        @attribute({
+            required: true
+        })
         protected product: Product;
 
         protected f() {
