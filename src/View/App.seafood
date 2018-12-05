@@ -1,5 +1,5 @@
 <script>
-    import {Component} from "@seafood/framework";
+    import {Component} from "@seafood/component";
 
     /**
      * Viewport must contain <content> tag to show currently
