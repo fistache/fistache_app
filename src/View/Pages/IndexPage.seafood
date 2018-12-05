@@ -1,5 +1,5 @@
 <script>
-    import {Page} from "@seafood/framework";
+    import {Page} from "@seafood/component";
 
     export class IndexPage extends Page {
         //
@@ -7,7 +7,7 @@
 </script>
 
 <template>
-    <div class="page page--index">
+    <page class="page-index">
         <!-- // -->
-    </div>
+    </page>
 </template>

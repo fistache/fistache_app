@@ -5,7 +5,7 @@
      * Viewport must contain <content> tag to show currently
      * viewed by user page.
      */
-    export class App extends Component {
+    export default class App extends Component {
         //
     }
 </script>
