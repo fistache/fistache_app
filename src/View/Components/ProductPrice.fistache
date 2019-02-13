@@ -1,0 +1,17 @@
+<script>
+    import { Component, attribute } from '@fistache/component'
+
+    export default class ProductPriceComponent extends Component {
+        @attribute({
+            required: true
+        })
+        private price: number
+    }
+</script>
+
+<span class="product-price">{{ this.price }}</span>
+
+<style>
+    .product-price
+        color red
+</style>

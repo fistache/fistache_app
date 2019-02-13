@@ -1,0 +1,21 @@
+<script>
+    import { Page } from '@fistache/component'
+
+    export default class IndexPage extends Page {
+        protected count = 0
+
+        protected increment() {
+            this.count++
+        }
+    }
+</script>
+
+<div class="page--index">
+    <div>{{ this.count }}</div>
+    <button &click={ this.increment }>click me</button>
+</div>
+
+<style>
+    .page--index
+        background-color red
+</style>

@@ -1,5 +1,5 @@
 {
   "presets": [
-    "@seafood/app"
+    "@fistache/babel-preset-app"
   ]
 }

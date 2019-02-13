@@ -1,2 +1,0 @@
-# Seafood project
-

@@ -1,3 +1,5 @@
-export default ({bind}: any) => {
-    bind("/", () => import("../View/IndexPage.seafood"));
-};
+import { Router } from '@fistache/router'
+
+export default (router: Router) => {
+    router.bind('/', () => import('../View/Pages/Index.fistache'))
+}

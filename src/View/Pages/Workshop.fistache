@@ -1,0 +1,35 @@
+<script>
+    import { Page, use } from '@fistache/component'
+    import PageComponent from '../Components/Page.fistache'
+    import ProductComponent from '../Components/Product.fistache'
+
+    @use({
+        PageComponent,
+        ProductComponent
+    })
+    export default class MarketplacePage extends Page {
+        protected products = [{
+            name: 'Product one',
+            price: 12.99
+        }, {
+            name: 'Product two',
+            price: 7.49
+        }, {
+            name: 'Product three',
+            price: 17.19
+        }]
+    }
+</script>
+
+<page>
+    <Product product={ product } @for={ let product of this.products } />
+    <text2 class="one-more-class"></text2>
+</page>
+
+<style>
+    .just-a-class
+        background-color red
+
+    .one-more-class
+        color wheat
+</style>

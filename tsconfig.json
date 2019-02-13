@@ -1,5 +1,5 @@
 {
-  "extends": "./node_modules/seafood-typescript-config/tsconfig.json",
+  "extends": "./node_modules/@fistache/typescript-config/tsconfig.json",
   "exclude": [
     "node_modules",
     "**/*.spec.ts"

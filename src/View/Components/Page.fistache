@@ -1,0 +1,11 @@
+<script>
+    import { Component } from '@fistache/component'
+
+    export default class Page extends Component {
+        //
+    }
+</script>
+
+<div class="page">
+    <content/>
+</div>
