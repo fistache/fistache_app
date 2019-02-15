@@ -1,17 +1,17 @@
 <script>
     import { Page, fetch } from '@fistache/component'
 
-    export default class IndexPage extends Page {
+    export default class RecipePage extends Page {
         public static async fetch(): Promise<any> {
-            return window.fetch('https://jsonplaceholder.typicode.com/todos/1')
+            return window.fetch(`https://jsonplaceholder.typicode.com/posts/1`)
                 .then((response: Response) => {
                     return response.json()
                 })
         }
 
         @fetch()
-        private todo!: any
+        private recipe!: any
     }
 </script>
 
-<span>my todo: {{ this.todo.title }}</span>
+<span>Recipe: {{ this.recipe.title }}</span>

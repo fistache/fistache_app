@@ -1,0 +1,9 @@
+<script>
+    import { Page } from '@fistache/component'
+
+    export default class NotFoundPage extends Page {
+        //
+    }
+</script>
+
+<span>Page not found</span>

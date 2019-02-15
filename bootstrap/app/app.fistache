@@ -9,3 +9,7 @@
 <div class="app">
     <Page/>
 </div>
+
+<style global>
+    @import "../../resources/style/common.styl"
+</style>

@@ -1,6 +1,7 @@
-import App from './App'
-import Workshop from './Workshop'
+import App from './Sections/App'
+import Raw from './Sections/Raw'
+import Workshop from './Sections/Workshop'
 
 export default [
-    App, Workshop
+    App, Raw, Workshop
 ]
