@@ -1,0 +1,35 @@
+package app.animals
+
+import app.animals.Animal
+import app.vegetables.Carrot
+
+class Rabbit : Animal, PrototypeInterface
+{
+    /**
+     * To eat or not to eat, what is the quastion?
+     */
+    protected Carrot carrot
+
+    public Rabbit()
+    {
+        // ...
+    }
+
+    public function Rabbit clone()
+    {
+        // ...
+    }
+
+    private function void resolveCarrot()
+    {
+        when(this.carrot)
+        {
+            Carrot.Altair -> console.log(`It's an altair, man.`)
+            Carrot.Calisto -> console.log(`It's a calisto.`)
+            else -> {
+                this.markCarrotResolvedWrong()
+                console.log(`What is carrot variety it?`)
+            }
+        }
+    }
+}

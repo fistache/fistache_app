@@ -1,0 +1,16 @@
+<script>
+    package app.component.animals
+
+    import app.component.animals.Animal
+    import app.component.Carrot
+
+    class Rabbit : Animal
+    {
+        @attribute
+        protected Carrot carrot
+    }
+</script>
+
+<div class="rabbit">
+    <Carrot carrot={this.carrot} />
+</div>

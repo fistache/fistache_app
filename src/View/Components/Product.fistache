@@ -1,6 +1,6 @@
 <script>
     import { Component, use, attribute } from '@fistache/component'
-    import Product from '../../Entity/Product'
+    import { Product } from '../../Entity/Product'
     import ProductPriceComponent from '../Components/ProductPrice.fistache'
 
     @use({

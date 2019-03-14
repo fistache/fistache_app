@@ -1,11 +1,23 @@
+import {router} from '@fistache/router'
+import routes from '../src/Routes'
 import {createApp} from './app/app'
+import notFoundPage from '../src/View/Pages/404.fistache'
 
-export default (context: any) => {
+router.setNotFoundPage(notFoundPage)
+router.addRoutes(routes)
+
+export default () => {
     return new Promise((resolve: any, reject: any) => {
-        const { app } = createApp()
+        router.done(async () => {
+            const { app } = createApp(router.getCurrentPage())
 
-        // todo: resolve async requests
+            try {
+                await router.fetchCurrentPage()
+            } catch (e) {
+                reject(e)
+            }
 
-        resolve(app)
+            resolve(app)
+        })
     })
 }

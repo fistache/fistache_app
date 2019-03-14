@@ -1,0 +1,9 @@
+<script>
+    import { Component } from '@fistache/component'
+
+    export default class TextComponent extends Component {
+        private text = 'private text'
+    }
+</script>
+
+<span>{{ this.text }}</span>
